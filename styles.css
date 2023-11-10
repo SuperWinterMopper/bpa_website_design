@@ -1,0 +1,136 @@
+body {
+    margin: 0;
+}
+
+.header-bar {
+    background-color: gray;
+    width: 100vw;
+    height: 10vh;
+    display: flex;
+    flex-direction: row;
+}
+
+.header-bar .site-logo {
+    display: flex;
+    flex-direction: row;
+    background-color:darksalmon;
+}
+
+.header-bar .site-logo img {
+    width: 8vw;
+}
+
+.header-bar .search-bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-left: 5vw;
+    background-color: lightpink;
+}
+
+.header-bar .search-bar #search-logo
+{
+    width: 3vh;
+    height: 3vh;
+}
+
+.header-bar .search-bar input[type=text] {
+    border: none;
+    padding: 1vw;
+    background-color: inherit;
+    font-size: 1.5em;
+    color: white;
+    width: 65vw;
+}
+
+.major-product-header {
+    width: 100vw;
+    height: 10vh;
+    background-color: khaki;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.selling-body {
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    background-color: rgb(219, 217, 192);
+}
+
+.filters {
+    width: 25vw;
+    height: 300vh;
+    margin-top: 2vw;
+    background-color: gray;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.selling-body .filters button{
+    background-color: inherit;
+    border: none;
+    font-size: 1em;
+}
+
+.selling-body .filters button:hover {
+    cursor: pointer;
+}
+
+.selling-body .filters #dropdown-content {
+    display: none;
+    position: absolute;
+}
+
+.selling-body .filters #dropdown-content button:hover {
+    background-color: darkblue;
+}
+
+.show {
+    display: block; 
+}
+
+.product-grid {
+    width: 75vw;
+    height: 300vh;
+    background-color: rgb(255, 236, 61);
+    display: grid;
+    grid-template-columns: repeat(3, minmax(10px, 1fr));
+    grid-template-rows: repeat(6, minmax(10px, 1fr));
+    gap: 10px;
+    margin: 2vw;
+}
+
+.headphone_00 {
+    grid-column: 1;
+    grid-row: 1;
+    background-color: blue;
+}
+
+.headphone_01 {
+    grid-column: 2;
+    grid-row: 1;
+    background-color: rgb(232, 119, 119);
+}
+
+.headphone_02 {
+    grid-column: 3;
+    grid-row: 1;
+    background-color: green;
+}
+
+.headphone_10 {
+    grid-column: 1;
+    grid-row: 2;
+    background-color: rgb(232, 119, 119);
+}
+
+footer {
+    background-color: rgb(20, 172, 157);
+    width: 100vw;
+    height: 20vh;
+}
