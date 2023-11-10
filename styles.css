@@ -13,7 +13,7 @@ body {
 .header-bar .site-logo {
     display: flex;
     flex-direction: row;
-    background-color:black;
+    background-color:white;
 }
 
 .header-bar .site-logo img {
