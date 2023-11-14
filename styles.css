@@ -60,14 +60,17 @@ header ul li a {
 
 header ul li a:hover,
 header.sticky ul li a:hover{
-    border: solid 2px var(--mainColor);
-    border-radius: 10px;
-    transition: 0s;
+    color: var(--mainColor);
 }
 
 header.sticky .logo,
 header.sticky ul li a {
     color: #ffffff;
+}
+
+header ul li a .icons {
+    max-height: 40px;
+    width: auto;
 }
     
 footer {
