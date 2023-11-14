@@ -54,6 +54,14 @@ header ul li a {
     letter-spacing: 1px;
     font-weight: 500px;
     transition: 0.6s;
+    padding: 8px;
+}
+
+header ul li a:hover,
+header.sticky ul li a:hover{
+    border: solid 2px var(--mainColor);
+    border-radius: 10px;
+    transition: 0s;
 }
 
 header.sticky .logo,
@@ -61,7 +69,6 @@ header.sticky ul li a {
     color: #ffffff;
 }
     
-
 footer {
     background-color: var(--mainColor);
     
