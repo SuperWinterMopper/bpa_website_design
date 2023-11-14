@@ -21,19 +21,9 @@ header.sticky {
     background: rgba(0, 0, 0, 0.6);
 }
 
-header .logo {
-    position: relative;
-    font-weight: 700;
-    color: #fff;
-    text-decoration: none;
-    font-size: 1.5em;
-    Letter-spacing: 2px;
-    transition: 0.6s;
-}
-
 header ul {
     position: relative;
-    width: 90%;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -49,7 +39,7 @@ header ul li a {
     margin: 0 15px;
     text-decoration: none;
     color: #fff;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
     font-weight: 500px;
     transition: 0.6s;
 }
