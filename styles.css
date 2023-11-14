@@ -2,7 +2,15 @@
     --mainColor: rgb(229, 201, 255);
 }
 
-body {
+body{
+    font-family: 'Asap Condensed', sans-serif;
+    font-family: 'Geologica', sans-serif;
+    font-family: 'Nunito', sans-serif;
+    font-family: 'Nunito Sans', sans-serif;
+    font-family: 'Raleway', sans-serif;
+    font-family: 'Red Rose', serif;
+    font-family: 'Ubuntu', sans-serif;
+    margin: 0;
     background: #6a6a6a;
     min-height: 200vh;
 }
@@ -51,16 +59,6 @@ header ul li a {
 header.sticky .logo,
 header.sticky ul li a {
     color: #ffffff;
-}
-{
-    font-family: 'Asap Condensed', sans-serif;
-    font-family: 'Geologica', sans-serif;
-    font-family: 'Nunito', sans-serif;
-    font-family: 'Nunito Sans', sans-serif;
-    font-family: 'Raleway', sans-serif;
-    font-family: 'Red Rose', serif;
-    font-family: 'Ubuntu', sans-serif;
-    margin: 0;
 }
     
 
