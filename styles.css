@@ -72,7 +72,21 @@ header ul li a .icons {
     max-height: 30px;
     width: auto;
 }
-    
+
+.section1 {
+    width: 100vw;
+    height: 100vh;
+    margin-top: 15vh;
+    position: relative;
+}
+
+.section1 .table {
+    width: 100vw;
+    height: 100vh;
+    background: url(https://cdn.pixabay.com/photo/2023/07/30/19/09/wood-8159535_1280.jpg) no-repeat center center fixed;
+    background-size: cover;
+}
+
 footer {
     background-color: var(--mainColor);
     width: 100vw;
