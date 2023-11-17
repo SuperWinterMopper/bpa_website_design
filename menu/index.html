@@ -19,7 +19,7 @@
                 <img class="icons" src="../images/tempLogo.png">
             </a></li>
             <li> <a href="#">Menu</a></li>
-            <li> <a href="#">Location hihi</a></li>
+            <li> <a href="#">Location</a></li>
             <li> <a href="#">Reservation</a></li>
             <li> <a href="#">
                 <img class= "icons" src="../images/shoppingCart.png">
@@ -28,14 +28,25 @@
     </header>
     <div class="section1">
         <div class="table">
-            <div class="menu-prompt">
-                <button id="sandwich-button"><img src="../images\breakfest.jpg"></button>
+            <div class="menu-prompt"> <!--1st button links to menu, 2nd to reservation. Can change href of a to redirect-->
+                <button id="plate-button"><a href="https://upload.wikimedia.org/wikipedia/en/4/45/Blackwaterpark.jpg"><img src="../images\breakfest.jpg"></a></button>
             </div>
             <div class="reservation-prompt">
-                <button id="controller-button"><img src="../images\cutlery.jpg"></button>
+                <button id="cutlery-button"><a href="https://upload.wikimedia.org/wikipedia/en/4/45/Blackwaterpark.jpg"><img src="../images\cutlery.jpg"></a></button>
             </div>
+    </div>
+    <div class="section2"> <!--about page-->
+        <div class="slider-parent">
+            <div class="slider-container">
+                <div class="slide"></div>
+                <div class="slide"></div>
+                <div class="slide"></div>
+            </div>
+            <button class="move-left" onclick="moveSliderLeft()"><</button>
+            <button class="move-right" onclick="moveSliderRight()">></button>  
         </div>
     </div>
+
 
     <footer>
         <!--Acton's code-->
@@ -54,6 +65,9 @@
                 <p>College Station High School</p>
                 <p>College Station, Texas</p>
                 <p>2023-2024</p>    
+
+                <p class="testing">Testing</p>
+
             </div>
         </div>
     </footer>
