@@ -1,8 +1,9 @@
 :root {
     --mainColor: rgb(226, 202, 250);
+    --defaultBack: rgb(53, 53, 53);
 }
 
-body{
+body {
     font-family: 'Asap Condensed', sans-serif;
     font-family: 'Geologica', sans-serif;
     font-family: 'Nunito', sans-serif;
@@ -11,10 +12,10 @@ body{
     font-family: 'Red Rose', serif;
     font-family: 'Ubuntu', sans-serif;
     margin: 0;
-    background: rgb(0, 0, 0);
+    background: var(--defaultBack);
     min-height: 200vh;
     overflow-x: hidden;
-}   
+}
 
 header {
     position: fixed;
@@ -27,6 +28,7 @@ header {
     transition: 0.6s;
     padding: 20px 0;
     z-index: 100000;
+    background-color: black;
 }
 
 header.sticky {
@@ -59,7 +61,7 @@ header ul li a {
 }
 
 header ul li a:hover,
-header.sticky ul li a:hover{
+header.sticky ul li a:hover {
     color: var(--mainColor);
 }
 
@@ -72,139 +74,20 @@ header ul li a .icons {
     max-height: 30px;
     width: auto;
 }
+.nav {
+    width: 30vw;
+    height: auto;
+    background-color: white;
+    font-size: 2em;
+}
 
-.section1 {
-    width: 100vw;
-    height: 100vh;
-    margin-top: 15vh;
+.nav .nav-container {
+    padding: 30px;
+}
+
+.nav ul li {
     position: relative;
-}
-
-.section1 .table {
-    width: 100vw;
-    height: 100vh;
-    background: url(https://cdn.pixabay.com/photo/2023/07/30/19/09/wood-8159535_1280.jpg) no-repeat center center;
-    background-size: cover;
-    position: relative;
-}
-
-.section1 .table .menu-prompt {
-    position: absolute;
-    top: 20vh;
-    left: 10vw;
-}
-
-.section1 .table .reservation-prompt {
-    position: absolute;
-    top: 20vh;
-    left: 50vw;
-}
-
-.section1 .table .menu-prompt #plate-button {
-    cursor: pointer;
-    border: none;
-    background-color: transparent;
-    transition: transform .2s ease-in-out;
-    width: 400px;
-    transform: rotate(-10deg);
-
-}
-
-.section1 .table .reservation-prompt #cutlery-button {
-    cursor: pointer;
-    border: none;
-    background-color: transparent;
-    transition: transform .2s ease-in-out;
-    width: 400px;
-    transform: rotate(15deg);
-}
-
-.section1 .table .menu-prompt #plate-button:hover {
-    transform: rotate(0deg);
-    transform: translateY(-5vh);
-}
-
-.section1 .table .reservation-prompt #cutlery-button:hover {
-    transform: rotate(0deg);
-    transform: translateY(-5vh);
-}
-
-.section1 .table button img {
-    width: 100%;
-    height: auto; 
-}
-
-.section2 .slider-parent {
-    width: 100vw;
-    height: 100vh;
-    position: relative;
-}
-
-.section2 .slider-parent .slider-container {
-    width: 300vw;
-    height: 100vh;
+    list-style: none;
     display: flex;
-    position: relative;
-    transition: transform .5s ease-in-out;
-}
-
-.section2 .slider-parent .slider-container .slide {
-    width: 100vw;
-    height: 100vh;
-    position: relative;
-    background-color: rgb(0, 0, 0);
-}
-.section2 .slider-parent .slider-container .slide .inner-slide{
-    background-color: var(--mainColor);
-}
-
-.section2 .slider-parent .move-left,
-.section2 .slider-parent .move-right {
-    background-color: whitesmoke;
-    border: none;
-    font-size: 3em;
-    cursor: pointer;
-    transition: opacity .1s ease-in-out;
-    opacity: .3;
-    padding-left: 2vw;
-    padding-right: 2vw;
-    height: 13%;
-    border-radius: 4px;
-    position: absolute;
-}
-
-.section2 .slider-parent .move-left:hover,
-.section2 .slider-parent .move-right:hover {
-    opacity: 1;
-    background-color: rgba(255, 255, 255, 0.271);
-}
-
-.move-left {
-    top: 50%;
-    left: 1%;
-}
-
-.move-right {
-    top: 50%;
-    right: 2%;
-}
-
-footer {
-    background-color: var(--mainColor);
-    width: 100vw;
-    height: 70vh;
-}
-
-footer .footer-content {
-    padding: 10vh 30vw 10vh 30vw;
-    display: flex;
-    flex-direction: row;
-    justify-content:space-between;
-}
-
-footer .footer-info_1, .footer-info_2 {
-    display: flex;
-    flex-direction: column;
-    justify-content: left;
-    width: 15vw;
+    justify-content: space-evenly;
 }
