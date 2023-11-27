@@ -89,40 +89,6 @@ header ul li a .icons {
     position: relative;
 }
 
-.section1 .table .menu-prompt {
-    position: absolute;
-    top: 20vh;
-    left: 10vw;
-}
-
-.section1 .table .reservation-prompt {
-    position: absolute;
-    top: 20vh;
-    right: 10vw;
-}
-
-.section1 .table button {
-    cursor: pointer;
-    border: none;
-    background-color: transparent;
-}
-
-.section1 .table button img {
-    width: 100%;
-    height: auto; 
-    display: block; 
-}
-
-.section1 .table .menu-prompt #sandwich-button {
-    width: 400px;
-    transform: rotate(-10deg);
-}
-
-.section1 .table .reservation-prompt #controller-button {
-    width: 550px;
-    transform: rotate(15deg);
-}
-
 footer {
     background-color: var(--mainColor);
     width: 100vw;
