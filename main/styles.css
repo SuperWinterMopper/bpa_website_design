@@ -256,8 +256,8 @@ header ul li a .icons {
 }
 
 .section4 {
-    width: 100vw;
-    height: 170vh;
+    width: 100%;
+    height: auto;
     background-color: var(--defaultBack);
     overflow: hidden;
 }
@@ -279,11 +279,12 @@ footer {
     background-color: black;
     color: white;
     width: 100vw;
-    height: 70vh;
+    height: 80vh;
 }
 
 footer .footer-content {
-    padding: 10vh 30vw 10vh 30vw;
+    margin-top: 5vh;
+    padding: 10vh 30vw 0 30vw;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
