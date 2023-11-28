@@ -78,10 +78,10 @@ header ul li a .icons {
     position: fixed;
     width: 20vw;
     height: auto;
-    margin-top: 15vh;
+    margin-top: 10vh;
     font-size: 1.5em;
     background-color: var(--mainColor);
-    border-right: solid 5px black;
+    border-right: solid 10px black;
     padding:0;
 }
 
@@ -108,6 +108,18 @@ header ul li a .icons {
 .nav ul li a {
     text-decoration: none;
     color: black;
+}
+
+.entree {
+    position: relative;
+    top: 15vh;
+    left: 25vw;
+    color: #000;
+}
+
+.entree h1 {
+    font-size: 3em;
+    background-color: var(--mainColor);
 }
 
 footer {
