@@ -78,7 +78,7 @@ header ul li a .icons {
 .section1 {
     width: 100vw;
     height: 100vh;
-    margin-top: 15vh;
+    margin-top: 0;
     position: relative;
     overflow: hidden;
 }
@@ -150,14 +150,14 @@ header ul li a .icons {
     align-items: center;
     height: 70vh;
     width: 100%;
-    
-    border: solid 5px rgb(0, 0, 0);
+    border-top: solid 5px black;
+    border-bottom: solid 5px black;
 }
 
 .section2 .section2-container1 {
     height: 70vh;
     width: 50%;
-    background-color: var(--mainColor);
+    background-color: rgb(175, 157, 225);
 }
 
 .section2 .section2-container2 {
@@ -265,7 +265,8 @@ header ul li a .icons {
 .section4 .section4-container {
     display: grid;
     grid-template-columns: 50% 50%;
-    border: solid 5px rgb(0, 0, 0);
+    border-top: solid 5px black;
+    border-bottom: solid 5px black;
 }
 
 .section4 .event-box {
