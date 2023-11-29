@@ -82,7 +82,9 @@ header ul li a .icons {
     font-size: 1.5em;
     background-color: var(--mainColor);
     border-right: solid 10px black;
+    box-sizing: border-box; 
     padding:0;
+    z-index: 1000;
 }
 
 .nav .nav-container {
@@ -110,16 +112,42 @@ header ul li a .icons {
     color: black;
 }
 
-.entree {
-    position: relative;
+.appetizer, .entree {
     top: 15vh;
-    left: 25vw;
+    margin-left: 20vw;
     color: #000;
 }
 
-.entree h1 {
+.appetizer h1, .entree h1 {
+    padding: 20px 20px 20px 30px;
     font-size: 3em;
     background-color: var(--mainColor);
+    z-index: 1;
+}
+
+.box-container{
+    margin-left: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 20px;
+}
+
+.box {
+    border: solid 5px #000;
+    background-color: #fff;
+    overflow: hidden;
+    width: 300px;
+    height: 350px;
+}
+
+.box img {
+    width:300px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.box h3, .box p {
+    margin: 10px 0 10px 10px;
 }
 
 footer {
