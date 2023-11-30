@@ -1,9 +1,9 @@
 let currentSliderPosition = 0;
 
 function moveSliderRight() {
+
+    console.log("AAAAAAAAAAAAAAAAAAAAAA");
     const sliderContainer = document.querySelector(".slider-container");
-    const done = document.querySelector(".testing")
-    done.style.color = "red";
     if(currentSliderPosition != -200)
     {
         currentSliderPosition-=100;
