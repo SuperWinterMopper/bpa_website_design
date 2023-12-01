@@ -103,6 +103,36 @@ header ul li a .icons {
     left: 66vw;
 }
 
+.section1 .table .identifier {
+    width: 15vw;
+    height: 8vh;
+    background-color:transparent;
+    color: white;
+    border-radius: 20px;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;    
+    font-family: 'Patrick Hand', cursive;
+    font-size: 1.5em;
+}
+
+.section1 .table .identifier img{
+    width: 8vw;
+    transform: rotate(20deg);
+}
+
+.section1 .table .menu-prompt .identifier {
+    top: 20%;
+    left: -5%;
+}
+
+.section1 .table .reservation-prompt .identifier {
+    top: 80%;
+    left: 65%;
+}
+
 .section1 .table .menu-prompt #plate-button {
     cursor: pointer;
     border: none;
@@ -352,6 +382,7 @@ header ul li a .icons {
     display: flex;
     flex-direction: column;
     text-align: start;
+    position: relative;
 }
 
 .section4 .section4-container .event-box .eventsbackground h1 {
@@ -368,6 +399,20 @@ header ul li a .icons {
 .section4 .section4-container .event-box .eventsbackground p {
     font-size: 1.5em;
     margin-left: 1vw;
+}
+
+.section4 .section4-container .event-box .eventsbackground .knight{
+    width: 9vw;
+    position: absolute;
+    right: 5%;
+    top: 52%;
+}
+
+.section4 .section4-container .event-box .eventsbackground .wreath{
+    width: 15vw;
+    position: absolute;
+    right: 30%;
+    top: 60%;
 }
 
 footer {
