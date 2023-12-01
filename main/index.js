@@ -2,7 +2,6 @@ let currentSliderPosition = 0;
 
 function moveSliderRight() {
 
-    console.log("AAAAAAAAAAAAAAAAAAAAAA");
     const sliderContainer = document.querySelector(".slider-container");
     if(currentSliderPosition != -200)
     {
