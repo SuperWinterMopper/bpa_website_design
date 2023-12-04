@@ -94,13 +94,13 @@ header ul li a .icons {
 .section1 .table .menu-prompt {
     position: absolute;
     top: 16vh;
-    left: 3vw;
+    left: 7vw;
 }
 
 .section1 .table .reservation-prompt {
     position: absolute;
     top: 15vh;
-    left: 66vw;
+    left: 60vw;
 }
 
 .section1 .table .identifier {
@@ -125,7 +125,7 @@ header ul li a .icons {
 
 .section1 .table .menu-prompt .identifier {
     top: 20%;
-    left: -5%;
+    left: -10%;
 }
 
 .section1 .table .reservation-prompt .identifier {
@@ -138,7 +138,7 @@ header ul li a .icons {
     border: none;
     background-color: transparent;
     transition: transform .2s ease-in-out;
-    width: 1000px;
+    width: 800px;
     transform: rotate(-10deg);
 }
 
@@ -147,7 +147,7 @@ header ul li a .icons {
     border: none;
     background-color: transparent;
     transition: transform .2s ease-in-out;
-    width: 400px;
+    width: 320px;
     transform: rotate(15deg);
 }
 
