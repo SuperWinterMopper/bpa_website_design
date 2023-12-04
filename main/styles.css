@@ -36,8 +36,7 @@ header {
 header.sticky {
     padding: 5px 0;
     background: rgba(0, 0, 0, 0.6);
-    
-    border:0px;
+    border-bottom:0px;
 }
 
 header ul {
@@ -387,10 +386,11 @@ header ul li a .icons {
     flex-direction: column;
     text-align: start;
     position: relative;
+    overflow: hidden;
 }
 
 .section4 .section4-container .event-box .eventsbackground h1 {
-    font-size: 3em;
+    font-size: 2em;
     justify-self: center;
     align-self: center;
     color: var(--mainColor);
@@ -401,7 +401,7 @@ header ul li a .icons {
 }
 
 .section4 .section4-container .event-box .eventsbackground p {
-    font-size: 1.5em;
+    font-size: 1.2em;
     margin-left: 1vw;
 }
 
