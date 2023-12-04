@@ -386,7 +386,7 @@ header ul li a .icons {
 }
 
 .section4 .section4-container .event-box .eventsbackground h1 {
-    font-size: 3em;
+    font-size: 2em;
     justify-self: center;
     align-self: center;
     color: var(--mainColor);
@@ -397,7 +397,7 @@ header ul li a .icons {
 }
 
 .section4 .section4-container .event-box .eventsbackground p {
-    font-size: 1.5em;
+    font-size: 1.2em;
     margin-left: 1vw;
 }
 
