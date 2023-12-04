@@ -1,0 +1,78 @@
+:root {
+    --mainColor: rgb(226, 202, 250);
+    --defaultBack: rgb(53, 53, 53);
+}
+
+body {
+    font-family: 'Asap Condensed', sans-serif;
+    font-family: 'Geologica', sans-serif;
+    font-family: 'Nunito', sans-serif;
+    font-family: 'Nunito Sans', sans-serif;
+    font-family: 'Raleway', sans-serif;
+    font-family: 'Red Rose', serif;
+    font-family: 'Ubuntu', sans-serif;
+    margin: 0;
+    background: white;
+    min-height: 300vh;
+    overflow-x: hidden;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.6s;
+    padding: 20px 0;
+    z-index: 100000;
+    background-color: black;
+    border-bottom: 8px solid transparent;
+    border-image: linear-gradient(to right, rgb(255, 0, 242), rgb(98, 0, 255)) 1;
+}
+
+header.sticky {
+    padding: 5px 0;
+    background: rgba(0, 0, 0, 0.6);
+    border-bottom: 0px;
+}
+
+header ul {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header ul li {
+    position: relative;
+    list-style: none;
+}
+
+header ul li a {
+    position: relative;
+    margin: 0 15px;
+    text-decoration: none;
+    color: #fff;
+    letter-spacing: 1px;
+    transition: 0.6s;
+    padding: 8px;
+}
+
+header ul li a:hover,
+header.sticky ul li a:hover {
+    color: var(--mainColor);
+}
+
+header.sticky .logo,
+header.sticky ul li a {
+    color: #ffffff;
+}
+
+header ul li a .icons {
+    max-height: 30px;
+    width: auto;
+}

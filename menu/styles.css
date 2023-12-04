@@ -104,6 +104,7 @@ header ul li a .icons {
     margin: 0;
     padding: 30px;
     line-height: 3em;
+    overflow: hidden;
 }
 
 .nav ul li {

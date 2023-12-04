@@ -29,11 +29,15 @@ header {
     padding: 20px 0;
     z-index: 100000;
     background-color: black;
+    border-bottom: 8px solid transparent;
+    border-image: linear-gradient(to right, rgb(255, 0, 242), rgb(98, 0, 255)) 1;
 }
 
 header.sticky {
     padding: 5px 0;
     background: rgba(0, 0, 0, 0.6);
+    
+    border:0px;
 }
 
 header ul {
