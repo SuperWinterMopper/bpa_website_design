@@ -187,6 +187,7 @@ header ul li a .icons {
     display: flex;
     position: relative;
     transition: transform .5s ease-in-out;
+    overflow: hidden;
 }
 
 .section3 .slider-parent .slider-container .slide {
