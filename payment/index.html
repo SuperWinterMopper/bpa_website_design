@@ -38,7 +38,10 @@
         </ul>
     </header>
     <div class="section1">
-        <div class="order-column">
+        <div class="checkout-page" id="checkout-page">
+            <h1>Thanks for your interest in the Game Day Grill. Now please go enjoy some games and company!</h1>
+        </div>
+        <div class="order-column" id="order-column">
             <div class="order" id="order1">
                 <div class="row1"><p class="name">NOTHING</p></div>
                 <div class="row2"><h class="price">NOTHING</h></div> 
@@ -279,7 +282,6 @@
                     <h class="taxprice">NOTHING</h>
                 </div>               
             </div>
-
             <div class="final">
                 <div class="row1">
                     <h class="total">TOTAL</h>
@@ -288,13 +290,12 @@
             </div>
             <div class="payCancel">
                 <div class="row1">
-                    <a class="pay">PAY</a>
-                    <a class= "orderButton" onclick='resetOrder();'><h class="Cancel">Cancel</h></a>
+                    <button class="payButton" onclick='payedPage(); resetOrder();'>PAY</button>
+                    <button class= "orderButton" onclick='resetOrder(); cancelPage()'>Cancel</button>
                 </div>
             </div>
         </div>
     </div>
-
 
     <footer>
         <!--Acton's code-->
@@ -339,6 +340,17 @@
             }
             document.getElementById('total-price').innerText = `$${totalCost.toFixed(2)}`;
             });
+        function payedPage() {
+            document.getElementById("order-column").style.display = 'none';
+            document.getElementById("checkout-page").style.display = 'flex';
+        }
+        function cancelPage() {
+            for(let i = 1; i < 31; i++)
+            {
+                document.getElementById(`order${i}`).style.display = 'none';
+            }
+            document.getElementById('total-price').innerText = "$0.00";
+        }
     </script>
 </body>
 
