@@ -1,6 +1,7 @@
     <!DOCTYPE html>
     <html lang="en">
 
+<<<<<<< Updated upstream
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,6 +12,18 @@
             href="https://fonts.googleapis.com/css2?family=Asap+Condensed:wght@200&family=Geologica:wght@200;400&family=Nunito+Sans:opsz,wght@6..12,200&family=Nunito:wght@200&family=Raleway:wght@200&family=Red+Rose&family=Ubuntu:ital,wght@0,300;1,300&display=swap"
             rel="stylesheet">
     </head>
+=======
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="index.js"></script>
+    <title>Reservation Information</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dhurjati&family=Lato:wght@300;400&family=Open+Sans&family=Roboto:wght@100;300;400&display=swap"
+        rel="stylesheet">
+</head>
+>>>>>>> Stashed changes
 
     <body>
         <header>
@@ -24,6 +37,7 @@
                 <li> <a href="../main/index.html#section4">Special Events</a></li>
                 <li> <a href="../payment/index.html">
                     <img class="icons" src="../images/shoppingCart.png">
+<<<<<<< Updated upstream
                     <div id="cart-number"></div>
                 </a></li>        
             </ul>
@@ -87,5 +101,103 @@
             </form>
         </div>
     </body>
+=======
+                </a></li>
+        </ul>
+    </header>
+    <div class="reserve">
+        <h1 id="title"> RESERVATION INFORMATION</h1>
+    </div>
+
+    <div class="note">
+        <h1>Reservation Form</h1>
+        <form action="/submit" method="post">
+            <div class="enter-name">
+                <div class="input-form">
+                    <label for="Name">First Name </label>
+                    <input type="text" name="Name" id="Name" 
+                    placeholder="Enter your First Name" autocomplete="given-name">
+                </div>
+                <div class="input-form">
+                    <label for="last">Last Name </label>
+                    <input type="text" name="Name" id="last" 
+                    placeholder="Enter your Last Name" autocomplete="family-name">
+                </div>
+            </div>
+            <div class="input-form">
+                <label for="email">Email </label>
+                <input type="email" name="email" id="email" 
+                placeholder="example@email.com" autocomplete="email">
+            </div>
+            <div class="input-form">
+                <label for="date">Date</label>
+                <input type="date" name="date" id="date">
+            </div>
+            <div class="input-form">
+                <label for="time">Time</label>
+                <input type="time" name="time" id="time">
+            </div>
+            <div class="input-form">
+                <label for="people">People attending</label>
+                <input type="number" name="people" id="people">
+            </div>
+            <div class="type-of-seat">
+                <p class="radio-label">Type of Table</p>
+                <div class="radio-group">
+                    <input type="radio" name="seat" id="vip">
+                    <label for="vip">VIP Game Room (seats up to 20) </label>
+                </div>
+                <div class="radio-group">
+                    <input type="radio" name="seat" id="party">
+                    <label for="party">Party Table (seats up to 10) </label>
+                </div>
+                <div class="radio-group">
+                    <input type="radio" name="seat" id="family">
+                    <label for="family">Family Table (seats up to 4) </label>
+                </div>
+                <div class="radio-group">
+                    <input type="radio" name="seat" id="normal">
+                    <label for="normal">Normal Table (seats up to 2) </label>
+                </div>
+
+            </div>
+            <div class="input-form">
+                <label for="table-num">Number of tables</label>
+                <input type="number" name="table-num" id="table-num">
+            </div>
+            <!--once clicked, it wll go to a different website link
+                 and display again the information submitted and a thank you message-->
+            <div class="message-leave">
+                <label for="message">Leave a message (optional): </label>
+                <textarea name="message" id="message" cols="50" rows="5"></textarea>
+            </div>
+            <input type="submit" value="Submit" onclick="showInput();" id="submitBtn">
+        </form>
+    </div>
+
+    <footer>
+        <!--Acton's code-->
+        <div class="footer-content">
+            <div class="footer-info_1">
+                <h1>Team Members</h1>
+                <p>Riho Miyamoto</p>
+                <p>Acton Healy</p>
+                <h1>Theme</h1>
+                <p>A relaxed and jovial grub station filled with board and video games!</p>
+            </div>
+            <div class="footer-info_2">
+                <h1>Chapter</h1>
+                <p>College Station High School Chapter 1</p>
+                <h1>Chapter Number</h1>
+                <p>02-1194</p>
+                <h1>Location, Year</h1>
+                <p>College Station High School</p>
+                <p>College Station, Texas</p>
+                <p>2023-2024</p>
+            </div>
+        </div>
+    </footer>
+</body>
+>>>>>>> Stashed changes
 
     </html>
