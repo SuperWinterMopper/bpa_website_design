@@ -29,6 +29,8 @@ header {
     padding: 20px 0;
     z-index: 100000;
     background-color: black;
+    border-bottom: 8px solid transparent;
+    border-image: linear-gradient(to right, rgb(255, 0, 242), rgb(98, 0, 255)) 1;
 }
 
 header.sticky {
@@ -115,7 +117,7 @@ header ul li a #cart-number {
 
 .section1 .order-column {
     width: 30vw;
-    margin-top: 15vh;
+    margin-top: 20vh;
 }
 
 .section1 .order-column .order {
