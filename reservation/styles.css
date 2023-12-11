@@ -75,7 +75,6 @@ header ul li a .icons {
     width: auto;
 }
 
-<<<<<<< Updated upstream
 header ul li a #cart-number {
     width: 30px;
     height: 30px;
@@ -88,7 +87,8 @@ header ul li a #cart-number {
     top: 18px;
     border-radius: 50%;
     font-size: 1.4em;
-=======
+}
+
 #title {
     font-family: 'Roboto', sans-serif;
     font-family: 'Dhurjati', sans-serif;
@@ -99,7 +99,6 @@ header ul li a #cart-number {
     color: #fff;
     margin-top: 15vh;
     margin-bottom: 0;
->>>>>>> Stashed changes
 }
 
 .note {
@@ -151,7 +150,7 @@ input[type=date],
 input[type=number],
 input[type=time],
 input[type=email],
-textarea{
+textarea {
     padding: 8px 15px;
     margin: 5px 0 10px 0;
     border: 1px solid #363636;
@@ -160,7 +159,7 @@ textarea{
     width: 100%;
 }
 
-input[type=radio]{
+input[type=radio] {
     transform: scale(1.5);
 }
 
@@ -176,13 +175,17 @@ input[type=radio]{
     margin: 0;
 }
 
-textarea  
-{  
-    font-family: 'Roboto', sans-serif;
-    font-weight: 300;  
+.type-of-seat .radio-label {
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
-input[type=submit]{
+textarea {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+}
+
+input[type=submit] {
     width: 50%;
     background-color: #fff;
     padding: 8px 15px;

@@ -101,7 +101,7 @@ header ul li a #cart-number {
     background-color: var(--mainColor);
     box-sizing: border-box;
     padding: 0;
-    z-index: 1000;
+    z-index: 1;
 }
 
 .nav .nav-container {
@@ -183,7 +183,6 @@ header ul li a #cart-number {
     transform: scale(0.8);
 }
 
-
 .box button{
     cursor: pointer;
     padding: 0;
@@ -200,8 +199,18 @@ header ul li a #cart-number {
     object-fit: cover;
 }
 
+.box h3{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+
+.box p{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+}
 .box h3,
 .box p {
+    
     margin: 15px 10px 10px 15px;
 }
 
@@ -222,6 +231,7 @@ footer {
     color: white;
     width: 100vw;
     height: 100vh;
+    z-index: 100000;
 }
 
 footer .footer-content {
