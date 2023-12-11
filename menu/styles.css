@@ -77,6 +77,21 @@ header ul li a .icons {
     width: auto;
 }
 
+header ul li a #cart-number {
+    width: 30px;
+    height: 30px;
+    background-color: var(--mainColor);
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 18px;
+    border-radius: 50%;
+    font-size: 1.4em;
+}
+
+
 .nav {
     position: fixed;
     /* change to sticky later */
@@ -158,10 +173,23 @@ header ul li a .icons {
     width: 300px;
     height: 350px;
     box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    transition: transform 0.2s ease-in-out;
+    cursor: pointer;
 }
 
-.box a{
+.box:active {
+    transform: scale(0.8);
+}
+
+
+.box button{
     cursor: pointer;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    font-family: inherit;
+    font-size: inherit;
+    text-align: left;    
 }
 
 .box img {
@@ -178,7 +206,13 @@ header ul li a .icons {
 .top {
     text-align: end;
     padding: 50px 90px 20px 60px;
-    font-size: 1.3em;
+}
+
+.toTopButton {
+    font-size: 1.8em;
+    border: none;
+    background-color: inherit;
+    cursor: pointer;
 }
 
 footer {

@@ -3,6 +3,36 @@ window.addEventListener("scroll", function(){
     header.classList.toggle("sticky", window.scrollY > 0);
 })
 
+let orderNames = [];
+let orderCosts = [];
+let taxCosts = [];
+let totalCost = 0.00;
+let counter = 0;
+let currentSliderPosition = 0;
+
+function moveSliderRight() {
+
+    const sliderContainer = document.querySelector(".slider-container");
+    if(currentSliderPosition != -200)
+    {
+        currentSliderPosition-=100;
+        sliderContainer.style.transform = `translateX(${currentSliderPosition}vw)`;
+    }
+}
+
+function moveSliderLeft() {
+    const sliderContainer = document.querySelector(".slider-container");
+    if(currentSliderPosition != 0)
+    {
+        currentSliderPosition+=100;
+        sliderContainer.style.transform = `translateX(${currentSliderPosition}vw)`;
+    }
+}
+
+function backToTop() {
+    window.scrollTo(0,0);
+}
+
 document.addEventListener('DOMContentLoaded', function() {
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function (e) {
@@ -22,19 +52,18 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
     });
+    const ordersString = localStorage.getItem('orderNames');
+    const ordersArray = JSON.parse(ordersString) || [];
+    let itemNum = ordersArray.length;
+    document.getElementById('cart-number').innerText = itemNum;
 });
 
-let orderNames = [];
-let orderCosts = [];
-let taxCosts = [];
-let totalCost = 0.00;
-let counter = 0;
-
- function addOrderName(name) {
+function addOrderName(name) {
         counter++;
         orderNames.push(name);
         localStorage.setItem('orderNames', JSON.stringify(orderNames)); 
         localStorage.setItem('counter', JSON.stringify(counter)); 
+        document.getElementById('cart-number').innerText = orderNames.length;
  }
 
  function addOrderCost(cost) {

@@ -25,21 +25,22 @@
 <body>
     <header>
         <ul>
-            <li> <a href="#">
+            <li> <a href="../main/index.html">
                     <img class="icons" src="../images/tempLogo.png">
                 </a></li>
             <li> <a href="../menu/index.html">Menu</a></li>
-            <li> <a href="#section3">Location</a></li>
-            <li> <a href="">Reservation</a></li>
-            <li> <a href="#section4">Special Events</a></li>
+            <li> <a href="../main/index.html#section3">Location</a></li>
+            <li> <a href="../reservation/index.html">Reservation</a></li>
+            <li> <a href="../main/index.html#section4">Special Events</a></li>
             <li> <a href="../payment/index.html">
                     <img class="icons" src="../images/shoppingCart.png">
+                    <div id="cart-number"></div>
                 </a></li>
         </ul>
     </header>
     <div class="section1">
         <div class="checkout-page" id="checkout-page">
-            <h1>Thanks for your interest in the Game Day Grill. Now please go enjoy some games and company!</h1>
+            <h1>Much appreciated for your purchase. Your affordable meal promises a laid-back experience with freely playable games. Looking forward to your visit, and we hope you enjoy this store we've got going.</h1>
         </div>
         <div class="order-column" id="order-column">
             <div class="order" id="order1">
@@ -343,6 +344,8 @@
         function payedPage() {
             document.getElementById("order-column").style.display = 'none';
             document.getElementById("checkout-page").style.display = 'flex';
+            document.getElementById('cart-number').innerText = "0";
+            window.scrollTo(0,0);
         }
         function cancelPage() {
             for(let i = 1; i < 31; i++)
@@ -350,6 +353,7 @@
                 document.getElementById(`order${i}`).style.display = 'none';
             }
             document.getElementById('total-price').innerText = "$0.00";
+            document.getElementById('cart-number').innerText = "0";
         }
     </script>
 </body>

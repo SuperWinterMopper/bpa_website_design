@@ -1,90 +1,91 @@
-<!DOCTYPE html>
-<html lang="en">
+    <!DOCTYPE html>
+    <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <script src="index.js"></script>
-    <title>Reservation Information</title>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Asap+Condensed:wght@200&family=Geologica:wght@200;400&family=Nunito+Sans:opsz,wght@6..12,200&family=Nunito:wght@200&family=Raleway:wght@200&family=Red+Rose&family=Ubuntu:ital,wght@0,300;1,300&display=swap"
-        rel="stylesheet">
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
+        <script src="../order.js"></script>
+        <title>Reservation Information</title>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Asap+Condensed:wght@200&family=Geologica:wght@200;400&family=Nunito+Sans:opsz,wght@6..12,200&family=Nunito:wght@200&family=Raleway:wght@200&family=Red+Rose&family=Ubuntu:ital,wght@0,300;1,300&display=swap"
+            rel="stylesheet">
+    </head>
 
-<body>
-    <header>
-        <ul>
-            <li> <a href="../main/index.html">
-                    <img class="icons" src="../images/tempLogo.png">
-                </a></li>
-            <li> <a href="../menu/index.html">Menu</a></li>
-            <li> <a href="../main/index.html#section3">Location</a></li>
-            <li> <a href="../reservation/index.html">Reservation</a></li>
-            <li> <a href="#">Special Events</a></li>
-            <li> <a href="#">
+    <body>
+        <header>
+            <ul>
+                <li> <a href="../main/index.html">
+                        <img class="icons" src="../images/tempLogo.png">
+                    </a></li>
+                <li> <a href="../menu/index.html">Menu</a></li>
+                <li> <a href="../main/index.html#section3">Location</a></li>
+                <li> <a href="../reservation/index.html">Reservation</a></li>
+                <li> <a href="../main/index.html#section4">Special Events</a></li>
+                <li> <a href="../payment/index.html">
                     <img class="icons" src="../images/shoppingCart.png">
-                </a></li>
-        </ul>
-    </header>
-    
-    <div class="note">  
-        <h1>ACCEPT</h1>
-        <form action="/submit" method="post">
-            <label for="Name">Name: </label>
-            <input type="text" name="Name">
-            <p>Gife Registry (Choose one or more):</p>
-            <div class="checklist">
-                <div class="gifts">
-                    <div class="individual-checkbox">
-                        <input type="checkbox" name="Rack">
-                        <label for="Rack">Clothes Rack</label>
+                    <div id="cart-number"></div>
+                </a></li>        
+            </ul>
+        </header>
+        
+        <div class="note">  
+            <h1>ACCEPT</h1>
+            <form action="/submit" method="post">
+                <label for="Name">Name: </label>
+                <input type="text" name="Name">
+                <p>Gife Registry (Choose one or more):</p>
+                <div class="checklist">
+                    <div class="gifts">
+                        <div class="individual-checkbox">
+                            <input type="checkbox" name="Rack">
+                            <label for="Rack">Clothes Rack</label>
+                        </div>
+                        <div class="individual-checkbox">
+                            <input type="checkbox" name="sheets">
+                            <label for="sheets">Bed Sheets</label>
+                        </div>
+                        <div class="individual-checkbox">
+                            <input type="checkbox" name="whsik">
+                            <label for="whsik">Whisk</label>
+                        </div>
                     </div>
-                    <div class="individual-checkbox">
-                        <input type="checkbox" name="sheets">
-                        <label for="sheets">Bed Sheets</label>
+                    <div class="gifts">
+                        <div class="individual-checkbox">
+                            <input type="checkbox" name="bats">
+                            <label for="bats">Assorted Batteries</label>
+                        </div>
+                        <div class="individual-checkbox">
+                            <input type="checkbox" name="cand">
+                            <label for="cand">Candles</label>
+                        </div>
+                        <div class="individual-checkbox">
+                            <input type="checkbox" name="ga">
+                            <label for="ga">Cheese Grater</label>
+                        </div>
                     </div>
-                    <div class="individual-checkbox">
-                        <input type="checkbox" name="whsik">
-                        <label for="whsik">Whisk</label>
+                    <div class="gifts">
+                        <div class="individual-checkbox">
+                            <input type="checkbox" name="waf">
+                            <label for="waf">Waffle Maker</label>
+                        </div>
+                        <div class="individual-checkbox">
+                            <input type="checkbox" name="garb">
+                            <label for="garb">Garbage Can</label>
+                        </div>
+                        <div class="individual-checkbox">
+                            <input type="checkbox" name="Bgo">
+                            <label for="Bgo">Bowls</label>
+                        </div>
                     </div>
                 </div>
-                <div class="gifts">
-                    <div class="individual-checkbox">
-                        <input type="checkbox" name="bats">
-                        <label for="bats">Assorted Batteries</label>
+                    <div class="message-leave">
+                        <label for="message">Leave a message (optional): </label>
+                        <textarea name="message" cols="50" rows="5"></textarea>
                     </div>
-                    <div class="individual-checkbox">
-                        <input type="checkbox" name="cand">
-                        <label for="cand">Candles</label>
-                    </div>
-                    <div class="individual-checkbox">
-                        <input type="checkbox" name="ga">
-                        <label for="ga">Cheese Grater</label>
-                    </div>
-                </div>
-                <div class="gifts">
-                    <div class="individual-checkbox">
-                        <input type="checkbox" name="waf">
-                        <label for="waf">Waffle Maker</label>
-                    </div>
-                    <div class="individual-checkbox">
-                        <input type="checkbox" name="garb">
-                        <label for="garb">Garbage Can</label>
-                    </div>
-                    <div class="individual-checkbox">
-                        <input type="checkbox" name="Bgo">
-                        <label for="Bgo">Bowls</label>
-                    </div>
-                </div>
-            </div>
-                <div class="message-leave">
-                    <label for="message">Leave a message (optional): </label>
-                    <textarea name="message" cols="50" rows="5"></textarea>
-                </div>
-                <input type="submit" value="Submit">
-        </form>
-    </div>
-</body>
+                    <input type="submit" value="Submit">
+            </form>
+        </div>
+    </body>
 
-</html>
+    </html>

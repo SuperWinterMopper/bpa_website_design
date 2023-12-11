@@ -78,6 +78,20 @@ header ul li a .icons {
     width: auto;
 }
 
+header ul li a #cart-number {
+    width: 30px;
+    height: 30px;
+    background-color: var(--mainColor);
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 18px;
+    border-radius: 50%;
+    font-size: 1.4em;
+}
+
 .section1 {
     width: 100vw;
     height: 100vh;
