@@ -55,10 +55,7 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
     });
-    const ordersString = localStorage.getItem('orderNames');
-    const ordersArray = JSON.parse(ordersString) || [];
-    let itemNum = ordersArray.length;
-    document.getElementById('cart-number').innerText = itemNum;
+ 
 });
 
 function addOrderName(name) {
@@ -67,6 +64,9 @@ function addOrderName(name) {
         localStorage.setItem('orderNames', JSON.stringify(orderNames)); 
         localStorage.setItem('counter', JSON.stringify(counter)); 
         document.getElementById('cart-number').innerText = orderNames.length;
+        const ordersString = localStorage.getItem('orderNames');
+        const ordersArray = JSON.parse(ordersString) || [];   
+        console.log(ordersArray); 
  }
 
  function addOrderCost(cost) {
