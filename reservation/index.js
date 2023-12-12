@@ -3,7 +3,6 @@ window.addEventListener("scroll", function () {
   header.classList.toggle("sticky", window.scrollY > 0);
 })
 
-
 var firstName = document.getElementById('Name');
 var lastName = document.getElementById('last');
 var email = document.getElementById('email');
@@ -12,12 +11,15 @@ var seat = document.getElementsByClassName('seat');
 var table = document.getElementById('table-num');
 var message = document.getElementById('message');
 
+
 console.log(firstName);
-console.log(document.getElementById('Name'));
-
-document.getElementById("hidden").style.display = 'none';
-
 function showInput() {
-  document.getElementById('hidden').style.display = '';
-  document.getElementById("registration-form").style.display = 'none';
+  document.getElementById("sName").innerHTML = firstName;
+  document.getElementById("sLastName").innerHTML = lastName;
+  document.getElementById("sEmail").innerHTML = email;
+  document.getElementById("sDate").innerHTML = date;
+  document.getElementById("sSeat").innerHTML = seat;
+  document.getElementById("sTableNum").innerHTML = table;
+  document.getElementById("sMessage").innerHTML = message;
+  document.getElementById('hidden').style.display = 'flex'; // Show the div
 }

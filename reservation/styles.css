@@ -114,6 +114,10 @@ header ul li a #cart-number {
     text-align: center;
 }
 
+.hidden{
+    display: none;
+}
+
 form {
     margin: 0 5vw 10vh 5vw;
     overflow: hidden;

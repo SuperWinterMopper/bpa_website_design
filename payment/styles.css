@@ -105,6 +105,7 @@ header ul li a #cart-number {
     font-size: 1.5em;
     color: white;
     display: none;
+    margin-top: 10vh;
     
     
 }
@@ -115,6 +116,7 @@ header ul li a #cart-number {
     padding: 3vw;
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
+    width: 50vw;
 }
 
 .section1 .order-column {
@@ -124,8 +126,9 @@ header ul li a #cart-number {
 }
 
 img{
-    max-width: 200px;
+    max-width: 300px;
     height: auto;
+    margin-right: 2vw;
 }
 
 .section1 .order-column .order {
