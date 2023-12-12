@@ -459,3 +459,14 @@ footer .footer-info_1,
     justify-content: left;
     width: 15vw;
 }
+
+@media (max-width: 1024px){ /*Tablets iPads portrait mode max-width:*/
+    .section1 .table .menu-prompt #plate-button {
+        width: 500px;
+    }
+    
+    .section1 .table .reservation-prompt #cutlery-button {
+        width: 200px;
+    }
+
+}
