@@ -116,26 +116,21 @@ header ul li a #cart-number {
 
 .hidden{
     display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
 }
+
+.hidden .label-result {
+    font-weight: 400;
+}
+
 
 form {
     margin: 0 5vw 10vh 5vw;
     overflow: hidden;
-}
-
-form .checklist {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
-form .gifts {
-    display: grid;
-}
-
-form .gifts .individual-checkbox {
-    display: flex;
-    align-items: end;
 }
 
 .input-form {
@@ -186,6 +181,16 @@ input[type=radio] {
 
 .bolden {
     font-weight: 400;
+}
+
+#submitBtn {
+    padding: 5px 20px 5px 20px;
+    border-radius: 10px;
+    font-size: 1em;
+    background-color: white;
+}
+#submitBtn:hover {
+    background-color: rgb(228, 228, 239);
 }
 
 textarea {

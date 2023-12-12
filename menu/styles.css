@@ -182,16 +182,16 @@ header ul li a #cart-number {
 .box:active {
     transform: scale(0.8);
 }
-    
 
-.box button{
+
+.box button {
     cursor: pointer;
     padding: 0;
     border: none;
     background-color: transparent;
     font-family: inherit;
     font-size: inherit;
-    text-align: left;    
+    text-align: left;
 }
 
 .box img {
@@ -200,9 +200,17 @@ header ul li a #cart-number {
     object-fit: cover;
 }
 
+.box h3 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+
 .box h3,
 .box p {
     margin: 15px 10px 10px 15px;
+}
+.box .des {
+    font-weight: 300;
 }
 
 .box .price {

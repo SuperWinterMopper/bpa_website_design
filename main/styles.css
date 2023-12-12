@@ -462,11 +462,11 @@ footer .footer-info_1,
 
 @media (max-width: 1024px){ /*Tablets iPads portrait mode max-width:*/
     .section1 .table .menu-prompt #plate-button {
-        width: 500px;
+        width: 600px;
     }
     
     .section1 .table .reservation-prompt #cutlery-button {
-        width: 200px;
+        width: 250px;
     }
 
 }
