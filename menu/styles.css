@@ -214,6 +214,10 @@ header ul li a #cart-number {
     margin: 15px 10px 10px 15px;
 }
 
+.box .price {
+    font-weight: 400;
+}
+
 .top {
     text-align: end;
     padding: 50px 90px 20px 60px;
@@ -224,6 +228,8 @@ header ul li a #cart-number {
     border: none;
     background-color: inherit;
     cursor: pointer;
+    color: white;
+    border: solid 2px white;
 }
 
 footer {

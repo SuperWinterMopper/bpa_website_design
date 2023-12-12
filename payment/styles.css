@@ -4,16 +4,14 @@
 }
 
 body {
-    font-family: 'Asap Condensed', sans-serif;
-    font-family: 'Geologica', sans-serif;
-    font-family: 'Nunito', sans-serif;
-    font-family: 'Nunito Sans', sans-serif;
-    font-family: 'Raleway', sans-serif;
-    font-family: 'Red Rose', serif;
-    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Dhurjati', sans-serif;
+    font-family: 'Lato', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
     margin: 0;
     background: var(--defaultBack);
-    min-height: 200vh;
+    min-height: 150vh;
     overflow-x: hidden;
 }
 
@@ -100,24 +98,34 @@ header ul li a #cart-number {
 }
 
 .section1 .checkout-page {
-    width: 100vw;
+    width: 80vw;
     height: 70vh;
     justify-content: center;
     align-items: center;
     font-size: 1.5em;
     color: white;
     display: none;
+    
+    
 }
 
 .section1 .checkout-page h1 {
     border: 2px solid white;
     font-size: 1.5rem;
     padding: 3vw;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
 }
 
 .section1 .order-column {
     width: 30vw;
     margin-top: 20vh;
+    
+}
+
+img{
+    max-width: 200px;
+    height: auto;
 }
 
 .section1 .order-column .order {
@@ -126,7 +134,7 @@ header ul li a #cart-number {
     border: 2px solid white;
     font-size: 1.5em;
     color: white;
-    padding: 2vw;
+    padding: 1vw 2vw 1vw 2vw;
     display: none;
 }
 
@@ -191,6 +199,9 @@ header ul li a #cart-number {
     cursor: pointer;
     border-radius: 8px;
     border: none;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    overflow: hidden;
 }
 
 .section1 .order-column .payCancel .row1 .payButton {
@@ -202,6 +213,7 @@ footer {
     color: white;
     width: 100vw;
     height: 100vh;
+    margin-bottom: 0;
 }
 
 footer .footer-content {
