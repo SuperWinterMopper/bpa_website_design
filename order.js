@@ -3,6 +3,27 @@ window.addEventListener("scroll", function(){
     header.classList.toggle("sticky", window.scrollY > 0);
 })
 
+var firstName = document.getElementById('Name');
+var lastName = document.getElementById('last');
+var email = document.getElementById('email');
+var date = document.getElementById('date');
+var seat = document.getElementsByClassName('seat');
+var table = document.getElementById('table-num');
+var message = document.getElementById('message');
+
+
+console.log(firstName);
+function showInput() {
+  document.getElementById("sName").innerHTML = firstName;
+  document.getElementById("sLastName").innerHTML = lastName;
+  document.getElementById("sEmail").innerHTML = email;
+  document.getElementById("sDate").innerHTML = date;
+  document.getElementById("sSeat").innerHTML = seat;
+  document.getElementById("sTableNum").innerHTML = table;
+  document.getElementById("sMessage").innerHTML = message;
+  document.getElementById('hidden').style.display = 'flex'; // Show the div
+}
+
 let orderNames = [];
 let orderCosts = [];
 let taxCosts = [];
@@ -30,10 +51,10 @@ function moveSliderLeft() {
     }
 }
 
-window.addEventListener("scroll", function(){
-    var header = document.querySelector("header");
-    header.classList.toggle("sticky", window.scrollY > 0);
-})
+
+function backToTop() {
+    window.scrollTo(0,0);
+}
 
 
 document.addEventListener('DOMContentLoaded', function() {
@@ -55,7 +76,10 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
     });
- 
+    const ordersString = localStorage.getItem('orderNames');
+    const ordersArray = JSON.parse(ordersString) || [];
+    let itemNum = ordersArray.length;
+    document.getElementById('cart-number').innerText = itemNum;
 });
 
 function addOrderName(name) {

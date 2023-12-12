@@ -23,3 +23,10 @@ function showInput() {
   document.getElementById("sMessage").innerHTML = message;
   document.getElementById('hidden').style.display = 'flex'; // Show the div
 }
+
+document.addEventListener('DOMContentLoaded', function() {
+  const ordersString = localStorage.getItem('orderNames');
+  const ordersArray = JSON.parse(ordersString) || [];
+  let itemNum = ordersArray.length;
+  document.getElementById('cart-number').innerText = itemNum;
+});
