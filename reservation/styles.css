@@ -168,16 +168,20 @@ input[type=radio] {
     flex-direction: column;
     margin-bottom: 3vh;
     margin-left: 1vw;
-    line-height: 5vh;
+    line-height: 4vh;
 }
 
 .type-of-seat .radio-group {
     margin: 0;
 }
 
-.type-of-seat .radio-label {
+#radio-label {
     margin-top: 0;
     margin-bottom: 0;
+}
+
+.bolden {
+    font-weight: 400;
 }
 
 textarea {
@@ -196,7 +200,7 @@ input[type=submit] {
 }
 
 input[type=submit]:hover {
-    background-color: #ffb0fa;
+    background-color: #dad8e4;
 }
 
 footer {

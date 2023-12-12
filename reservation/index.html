@@ -33,38 +33,49 @@
 
     <div class="note">
         <h1>Reservation Form</h1>
-        <form action="/submit" method="post">
+
+        <div class="hidden" id="hidden">
+            <h3>Information submitted:</h3>
+            <p id="sName"></p>
+            <p id="sEmail"></p>
+            <p id="sDate"></p>
+            <p id="sSeat"></p>
+            <p id="sTableNum"></p>
+            <p id="sMessage"></p>
+            
+        </div>
+        <form id="registration-form">
             <div class="enter-name">
                 <div class="input-form">
-                    <label for="Name">First Name </label>
+                    <label class="bolden" for="Name">First Name </label>
                     <input type="text" name="Name" id="Name" 
                     placeholder="Enter your First Name" autocomplete="given-name">
                 </div>
                 <div class="input-form">
-                    <label for="last">Last Name </label>
+                    <label class="bolden" for="last">Last Name </label>
                     <input type="text" name="Name" id="last" 
                     placeholder="Enter your Last Name" autocomplete="family-name">
                 </div>
             </div>
             <div class="input-form">
-                <label for="email">Email </label>
+                <label class="bolden" for="email">Email </label>
                 <input type="email" name="email" id="email" 
                 placeholder="example@email.com" autocomplete="email">
             </div>
             <div class="input-form">
-                <label for="date">Date</label>
+                <label  class="bolden" for="date">Date</label>
                 <input type="date" name="date" id="date">
             </div>
             <div class="input-form">
-                <label for="time">Time</label>
+                <label class="bolden" for="time">Time</label>
                 <input type="time" name="time" id="time">
             </div>
             <div class="input-form">
-                <label for="people">People attending</label>
+                <label class="bolden" for="people">People attending</label>
                 <input type="number" name="people" id="people">
             </div>
             <div class="type-of-seat">
-                <p class="radio-label">Type of Table</p>
+                <p class="bolden" id="radio-label">Type of Table</p>
                 <div class="radio-group">
                     <input type="radio" name="seat" id="vip">
                     <label for="vip">VIP Game Room (seats up to 20) </label>
@@ -84,15 +95,16 @@
 
             </div>
             <div class="input-form">
-                <label for="table-num">Number of tables</label>
+                <label class="bolden" for="table-num">Number of tables</label>
                 <input type="number" name="table-num" id="table-num">
             </div>
             <!--once clicked, it wll go to a different website link
                  and display again the information submitted and a thank you message-->
             <div class="message-leave">
-                <label for="message">Leave a message (optional): </label>
+                <label class="bolden" for="message">Leave a message (optional): </label>
                 <textarea name="message" id="message" cols="50" rows="5"></textarea>
             </div>
+            
             <input type="submit" value="Submit" onclick="showInput();" id="submitBtn">
         </form>
     </div>
