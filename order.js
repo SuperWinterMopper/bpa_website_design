@@ -58,6 +58,11 @@ function backToTop() {
 
 
 document.addEventListener('DOMContentLoaded', function() {
+    const ordersString = localStorage.getItem('orderNames');
+    const ordersArray = JSON.parse(ordersString) || [];
+    let itemNum = ordersArray.length;
+    document.getElementById('cart-number').innerText = itemNum;
+    console.log(itemNum);
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function (e) {
             e.preventDefault();
@@ -76,10 +81,6 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
     });
-    const ordersString = localStorage.getItem('orderNames');
-    const ordersArray = JSON.parse(ordersString) || [];
-    let itemNum = ordersArray.length;
-    document.getElementById('cart-number').innerText = itemNum;
 });
 
 function addOrderName(name) {
