@@ -209,6 +209,7 @@ header ul li a #cart-number {
 .box p {
     margin: 15px 10px 10px 15px;
 }
+
 .box .des {
     font-weight: 300;
 }
@@ -231,7 +232,7 @@ header ul li a #cart-number {
     color: #fff;
     letter-spacing: 1px;
     transition: 0.6s;
-    padding: 8px;    
+    padding: 8px;
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
 
@@ -262,4 +263,60 @@ footer .footer-info_1,
     flex-direction: column;
     justify-content: left;
     width: 15vw;
+}
+
+@media (max-width: 1400px){
+    .box-container {
+        margin-bottom: 5vh;
+        margin-left: 45px;
+        display: grid;
+        grid-template-columns: repeat(3, 290px);
+        row-gap: 20px;
+    }
+
+    .box {
+        width: 260px;
+        height: 350px;
+    }
+
+    .box img {
+        width: 260px;
+        height: 180px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .nav {
+        margin-left: 5vw;
+        font-size: 1.2em;
+    }
+    .box-container {
+        margin-bottom: 5vh;
+        margin-left: 45px;
+        display: grid;
+        grid-template-columns: repeat(2, 320px);
+        row-gap: 20px;
+    }
+    
+    .box {
+        background-color: #fff;
+        overflow: hidden;
+        border-radius: 3px;
+        width: 250px;
+        height: 300px;
+        box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+        transition: transform 0.2s ease-in-out;
+        cursor: pointer;
+    }
+
+    .box img {
+        width: 250px;
+        height: 140px;
+        object-fit: cover;
+    }
+
+    .box h3,
+    .box p {
+        margin: 10px 5px 5px 10px;
+    }
 }
